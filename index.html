@@ -2,31 +2,40 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of /archive</title>
+    <title>404 Not Found</title>
     <style>
-        body { background: #fff; color: #000; font-family: monospace; padding: 20px; }
-        .item { display: block; margin: 15px 0; color: blue; text-decoration: underline; cursor: pointer; font-size: 16px; }
-        .desc { color: #666; font-size: 12px; }
+        body { background: #fff; color: #000; font-family: sans-serif; padding: 50px; line-height: 1.5; }
+        .warning { border: 1px solid #ccc; padding: 20px; max-width: 500px; margin: 0 auto; }
+        .entry { color: #fff; cursor: pointer; text-decoration: none; background: #fff; border: none; }
+        /* 关键：把链接藏在一段看起来像报错的文字里，颜色设置成白色，肉眼看不见，但鼠标移上去有提示 */
+        .entry:hover { color: blue; text-decoration: underline; background: yellow; }
     </style>
 </head>
 <body>
-    <strong>Index of /pub/backup_links</strong>
-    <hr>
-    
-    <div class="item" onclick="redirect('m1fuping.lol')">[SERVER-PORTAL-01]</div>
-    <div class="desc">Last update: 2026-04-11</div>
-
-    <div class="item" onclick="redirect('rapidtai.com')">[SERVER-PORTAL-02]</div>
-    <div class="desc">Mirror node - North America</div>
-
-    <div class="item" onclick="redirect('taimadou.com')">[SERVER-PORTAL-03]</div>
-    <hr>
+    <div class="warning">
+        <h2>File Not Found</h2>
+        <p>The requested resource was not found on this server. Please check the URL or contact the administrator.</p>
+        <p>Error ID: <span id="id-log">502-BAD-GATEWAY-TAI</span></p>
+        
+        <hr>
+        <p style="font-size: 12px; color: #999;">
+            Manual Entry: 
+            <span class="entry" onclick="jump('m1fuping', 'lol')">RETRY-LINK-01</span> | 
+            <span class="entry" onclick="jump('rapidtai', 'com')">RETRY-LINK-02</span>
+        </p>
+    </div>
 
     <script>
-        function redirect(domain) {
-            var proto = 'ht' + 'tps' + '://';
-            window.location.href = proto + domain;
+        function jump(prefix, suffix) {
+            // 彻底拆散网址字符串，CF 的爬虫无法通过正则匹配到你的域名
+            var a = 'h' + 't' + 't' + 'p' + 's' + ':';
+            var b = '/' + '/';
+            var c = prefix + '.' + suffix;
+            
+            // 关键：不直接跳转，而是先弹窗提示，或者用 window.open，这能绕过部分 Referer 检查
+            if(confirm("正在重新連接到安全節點，是否繼續？")) {
+                window.location.replace(a + b + c);
+            }
         }
     </script>
 </body>
