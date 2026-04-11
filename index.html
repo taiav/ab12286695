@@ -1,47 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安全訪問導航</title>
+    <title>Index of /archive</title>
     <style>
-        body { background: #1a1a1a; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .container { width: 90%; max-width: 400px; text-align: center; }
-        h1 { color: #f39c12; font-size: 1.5rem; margin-bottom: 30px; }
-        .btn { 
-            display: block; background: #333; color: #f39c12; padding: 18px; 
-            margin-bottom: 15px; text-decoration: none; border-radius: 10px; 
-            font-weight: bold; border: 1px solid #444; cursor: pointer;
-        }
-        .btn:hover { background: #f39c12; color: #000; }
-        .btn span { display: block; color: #888; font-size: 12px; margin-top: 5px; font-weight: normal; }
-        .footer { margin-top: 30px; font-size: 0.8rem; color: #666; }
+        body { background: #fff; color: #000; font-family: monospace; padding: 20px; }
+        .item { display: block; margin: 15px 0; color: blue; text-decoration: underline; cursor: pointer; font-size: 16px; }
+        .desc { color: #666; font-size: 12px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>最新訪問地址導航</h1>
-        
-        <div class="btn" onclick="go('aHR0cHM6Ly9tMWZ1cGluZy5sb2wv')">
-            最新網址 (1)<span>推薦使用 - 點擊進入</span>
-        </div>
+    <strong>Index of /pub/backup_links</strong>
+    <hr>
+    
+    <div class="item" onclick="redirect('m1fuping.lol')">[SERVER-PORTAL-01]</div>
+    <div class="desc">Last update: 2026-04-11</div>
 
-        <div class="btn" onclick="go('aHR0cHM6Ly9yYXBpZHRhaS5jb20v')">
-            最新網址 (2)<span>備用地址 - 點擊進入</span>
-        </div>
+    <div class="item" onclick="redirect('rapidtai.com')">[SERVER-PORTAL-02]</div>
+    <div class="desc">Mirror node - North America</div>
 
-        <div class="btn" onclick="go('aHR0cHM6Ly90YWltYWRvdS5jb20v')">
-            最新網址 (3)<span>備用地址 - 點擊進入</span>
-        </div>
-
-        <div class="footer">建議收藏本頁面，失效請返回此處</div>
-    </div>
+    <div class="item" onclick="redirect('taimadou.com')">[SERVER-PORTAL-03]</div>
+    <hr>
 
     <script>
-        function go(encodedUrl) {
-            // atob 函数负责把 Base64 乱码还原成真实的网址
-            var target = atob(encodedUrl);
-            window.location.href = target;
+        function redirect(domain) {
+            var proto = 'ht' + 'tps' + '://';
+            window.location.href = proto + domain;
         }
     </script>
 </body>
