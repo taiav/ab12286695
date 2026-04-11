@@ -1,8 +1,75 @@
-<article class="markdown-body entry-content container-lg" itemprop="text"><h2><a id="user-content-最新網址(1)" class="anchor" aria-hidden="true" href="#最新網址(1)"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>最新網址(1)</h2>
-<p><a href="https://m1fuping.lol" rel="nofollow">請點我</a></p>
- 
-<article class="markdown-body entry-content container-lg" itemprop="text"><h2><a id="user-content-最新網址(2)" class="anchor" aria-hidden="true" href="#最新網址(1)"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>最新網址(1)</h2>
-<p><a href="https://rapidtai.com" rel="nofollow">請點我</a></p>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>永久發佈頁 - 穩定訪問地址</title>
+    <style>
+        body { background: #1a1a1a; color: #eee; font-family: -apple-system, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { width: 90%; max-width: 500px; text-align: center; }
+        h1 { color: #f39c12; font-size: 1.5rem; margin-bottom: 30px; }
+        .card { background: #2c3e50; border-radius: 12px; padding: 20px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.2s; cursor: pointer; display: block; text-decoration: none; color: white; }
+        .card:hover { transform: translateY(-5px); background: #34495e; border: 1px solid #f39c12; }
+        .card h2 { margin: 0; font-size: 1.1rem; color: #f39c12; }
+        .card p { margin: 10px 0 0; font-size: 0.9rem; opacity: 0.8; }
+        .footer { margin-top: 30px; font-size: 0.8rem; color: #666; }
+    </style>
+</head>
+<body>
 
-<article class="markdown-body entry-content container-lg" itemprop="text"><h2><a id="user-content-最新網址(3)" class="anchor" aria-hidden="true" href="#最新網址(2)"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>最新網址(2)</h2>
-<p><a href="https://taimadou.com" rel="nofollow">請點我</a></p>
+<div class="container">
+    <h1>最新訪問地址導航</h1>
+    
+    <div id="links-container"></div>
+
+    <div class="footer">
+        建議收藏本頁面 (Ctrl+D) <br>
+        如遇地址失效，請刷新本頁獲取最新鏈接
+    </div>
+</div>
+
+<script>
+    /**
+     * 💡 以后要换域名，只需要修改这里！
+     * 为防止被爬虫抓取，URL 建议使用 Base64 编码
+     * 编码工具：https://tool.oschina.net/encrypt?type=3
+     */
+    const config = [
+        { 
+            name: "最新網址 (1)", 
+            desc: "推薦使用 - 訪問最流暢", 
+            url: "aHR0cHM6Ly9tMWZ1cGluZy5sb2wv" // https://m1fuping.lol
+        },
+        { 
+            name: "最新網址 (2)", 
+            desc: "備用地址 - 海外加速", 
+            url: "aHR0cHM6Ly9yYXBpZHRhaS5jb20=" // https://rapidtai.com
+        },
+        { 
+            name: "最新網址 (3)", 
+            desc: "備用地址 - 備用節點", 
+            url: "aHR0cHM6Ly90YWltYWRvdS5jb20=" // https://taimadou.com
+        }
+    ];
+
+    const container = document.getElementById('links-container');
+
+    config.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'card';
+        // 解码跳转
+        card.href = 'javascript:void(0);';
+        card.onclick = () => {
+            window.location.href = atob(item.url);
+        };
+        
+        card.innerHTML = `
+            <h2>${item.name}</h2>
+            <p>${item.desc}</p>
+        `;
+        container.appendChild(card);
+    });
+</script>
+
+</body>
+</html>
