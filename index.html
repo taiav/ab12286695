@@ -2,41 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>404 Not Found</title>
+    <meta name="referrer" content="no-referrer"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Links</title>
     <style>
-        body { background: #fff; color: #000; font-family: sans-serif; padding: 50px; line-height: 1.5; }
-        .warning { border: 1px solid #ccc; padding: 20px; max-width: 500px; margin: 0 auto; }
-        .entry { color: #fff; cursor: pointer; text-decoration: none; background: #fff; border: none; }
-        /* 关键：把链接藏在一段看起来像报错的文字里，颜色设置成白色，肉眼看不见，但鼠标移上去有提示 */
-        .entry:hover { color: blue; text-decoration: underline; background: yellow; }
+        body { background: #121212; color: #fff; font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .btn { 
+            display: block; max-width: 300px; margin: 20px auto; padding: 20px; 
+            background: #f39c12; color: #000; text-decoration: none; 
+            border-radius: 10px; font-weight: bold; font-size: 20px; 
+        }
     </style>
 </head>
 <body>
-    <div class="warning">
-        <h2>File Not Found</h2>
-        <p>The requested resource was not found on this server. Please check the URL or contact the administrator.</p>
-        <p>Error ID: <span id="id-log">502-BAD-GATEWAY-TAI</span></p>
-        
-        <hr>
-        <p style="font-size: 12px; color: #999;">
-            Manual Entry: 
-            <span class="entry" onclick="jump('m1fuping', 'lol')">RETRY-LINK-01</span> | 
-            <span class="entry" onclick="jump('rapidtai', 'com')">RETRY-LINK-02</span>
-        </p>
-    </div>
-
-    <script>
-        function jump(prefix, suffix) {
-            // 彻底拆散网址字符串，CF 的爬虫无法通过正则匹配到你的域名
-            var a = 'h' + 't' + 't' + 'p' + 's' + ':';
-            var b = '/' + '/';
-            var c = prefix + '.' + suffix;
-            
-            // 关键：不直接跳转，而是先弹窗提示，或者用 window.open，这能绕过部分 Referer 检查
-            if(confirm("正在重新連接到安全節點，是否繼續？")) {
-                window.location.replace(a + b + c);
-            }
-        }
-    </script>
+    <h2 style="color:#f39c12">最新訪問網址</h2>
+    
+    <a href="https://m1fuping.lol" rel="noreferrer" class="btn">進入網站 (1)</a>
+    <a href="https://rapidtai.com" rel="noreferrer" class="btn">進入網站 (2)</a>
+    <a href="https://taimadou.com" rel="noreferrer" class="btn">進入網站 (3)</a>
+    
+    <p style="color:#666">如果點擊失敗，請嘗試手動輸入域名訪問</p>
 </body>
 </html>
